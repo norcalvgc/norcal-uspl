@@ -17,8 +17,8 @@ export default function PastSeasonsPage() {
             <div className="mb-6 bg-blue-50 p-4 rounded-lg flex justify-between items-center">
               <div>
                 <h3 className="text-lg font-semibold mb-3 text-blue-800">Final Standing</h3>
-                <div className="grid gap-2">
-                  <p>Regular Season: 4-3-0</p>
+                <div className="grid gap-1 text-sm md:text-base">
+                  <p>Season: 4-3</p>
                   <p>Playoffs: Top 16</p>
                 </div>
               </div>
@@ -57,8 +57,8 @@ export default function PastSeasonsPage() {
             <div className="mb-6 bg-blue-50 p-4 rounded-lg flex justify-between items-center">
               <div>
                 <h3 className="text-lg font-semibold mb-3 text-blue-800">Final Standing</h3>
-                <div className="grid gap-2">
-                  <p>Regular Season: 5-2</p>
+                <div className="grid gap-1 text-sm md:text-base">
+                  <p>Season: 5-2</p>
                   <p>Playoffs: Top 4</p>
                 </div>
               </div>
@@ -97,8 +97,8 @@ export default function PastSeasonsPage() {
             <div className="mb-6 bg-blue-50 p-4 rounded-lg flex justify-between items-center">
               <div>
                 <h3 className="text-lg font-semibold mb-3 text-blue-800">Final Standing</h3>
-                <div className="grid gap-2">
-                  <p>Regular Season: 5-1</p>
+                <div className="grid gap-1 text-sm md:text-base">
+                  <p>Season: 5-1</p>
                   <p>Playoffs: Top 8</p>
                 </div>
               </div>
