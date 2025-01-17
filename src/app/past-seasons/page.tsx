@@ -1,5 +1,12 @@
 import Image from "next/image";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "NorCal VGC USPL - Past Seasons",
+  description: "Historical team information from past USPL seasons for the NorCal VGC team",
+};
+
 export default function PastSeasonsPage() {
   return (
     <main className="flex min-h-screen flex-col items-center p-8">

@@ -1,4 +1,10 @@
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "NorCal VGC USPL - Home",
+  description: "Home page for the NorCal VGC team in USPL",
+};
 
 export default function Home() {
   return (

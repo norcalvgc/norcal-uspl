@@ -1,3 +1,10 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "NorCal VGC USPL - Players",
+  description: "Players page for the NorCal VGC team in USPL",
+};
+
 interface Player {
   name: string;
   matchRecord: string;
