@@ -6,12 +6,12 @@ interface Player {
 
 const players: Player[] = [
   { name: "Bobjoecarl", matchRecord: "0-0", battleRecord: "0-0" },
-  { name: "eragon11145", matchRecord: "1-0", battleRecord: "2-0" },
+  { name: "eragon", matchRecord: "1-0", battleRecord: "2-0" },
   { name: "gp2332", matchRecord: "0-0", battleRecord: "0-0" },
-  { name: "jchem", matchRecord: "1-0", battleRecord: "2-1" },
+  { name: "turboisonline", matchRecord: "1-0", battleRecord: "2-1" },
   { name: "kotoripoke", matchRecord: "0-0", battleRecord: "0-0" },
   { name: "lichess", matchRecord: "0-0", battleRecord: "0-0" },
-  { name: "max1960", matchRecord: "1-0", battleRecord: "2-1" },
+  { name: "ToastNoButter", matchRecord: "1-0", battleRecord: "2-1" },
   { name: "MissingNoL", matchRecord: "0-1", battleRecord: "1-2" },
   { name: "refyrn", matchRecord: "0-0", battleRecord: "0-0" },
   { name: "soduh", matchRecord: "0-1", battleRecord: "0-2" },
