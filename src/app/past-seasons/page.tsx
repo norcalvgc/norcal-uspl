@@ -12,7 +12,7 @@ export default function PastSeasonsPage() {
     <main className="flex min-h-screen flex-col items-center p-8">
       <div className="w-full max-w-4xl">
         <section className="w-full mb-12">
-          <h2 className="text-3xl font-bold text-center bg-gray-900 text-white py-3 rounded-t-lg">NorCal USPL (Season 3)</h2>
+          <h2 className="text-xl md:text-3xl font-bold text-center bg-gray-900 text-white py-3 rounded-t-lg">NorCal USPL (Season 3)</h2>
           <div className="bg-white shadow-md rounded-b-lg p-6 hover:shadow-lg transition-shadow">
             <div className="mb-6 bg-blue-50 p-4 rounded-lg flex justify-between items-center">
               <div>
@@ -52,7 +52,7 @@ export default function PastSeasonsPage() {
         </section>
 
         <section className="w-full mb-12">
-          <h2 className="text-3xl font-bold text-center bg-gray-900 text-white py-3 rounded-t-lg">NorCal USPL (Season 2)</h2>
+          <h2 className="text-xl md:text-3xl font-bold text-center bg-gray-900 text-white py-3 rounded-t-lg">NorCal USPL (Season 2)</h2>
           <div className="bg-white shadow-md rounded-b-lg p-6 hover:shadow-lg transition-shadow">
             <div className="mb-6 bg-blue-50 p-4 rounded-lg flex justify-between items-center">
               <div>
@@ -92,7 +92,7 @@ export default function PastSeasonsPage() {
         </section>
 
         <section className="w-full mb-12">
-          <h2 className="text-3xl font-bold text-center bg-gray-900 text-white py-3 rounded-t-lg">NorCal USPL (Season 1)</h2>
+          <h2 className="text-xl md:text-3xl font-bold text-center bg-gray-900 text-white py-3 rounded-t-lg">NorCal USPL (Season 1)</h2>
           <div className="bg-white shadow-md rounded-b-lg p-6 hover:shadow-lg transition-shadow">
             <div className="mb-6 bg-blue-50 p-4 rounded-lg flex justify-between items-center">
               <div>
