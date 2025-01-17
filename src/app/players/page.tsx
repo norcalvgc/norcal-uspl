@@ -22,39 +22,26 @@ const players: Player[] = [
 export default function PlayersPage() {
   return (
     <main className="flex min-h-screen flex-col items-center p-8">
-      <h1 className="text-4xl font-bold mb-8">Players</h1>
+      <h1 className="text-3xl font-bold text-center bg-gray-900 text-white py-3 rounded-t-lg w-full max-w-4xl">Players</h1>
       <div className="w-full max-w-4xl">
-        <div className="bg-white shadow-md rounded-lg overflow-hidden">
-          <table className="min-w-full divide-y divide-gray-200">
-            <thead className="bg-gray-50">
-              <tr>
-                <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                  Player Name
-                </th>
-                <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                  Match Record
-                </th>
-                <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                  Battle Record
-                </th>
-              </tr>
-            </thead>
-            <tbody className="bg-white divide-y divide-gray-200">
-              {players.map((player) => (
-                <tr key={player.name} className="hover:bg-gray-50">
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                    {player.name}
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                    {player.matchRecord}
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                    {player.battleRecord}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+        <div className="bg-white shadow-lg rounded-b-lg p-6">
+          <div className="grid grid-cols-3 gap-4 mb-4 px-4">
+            <div className="text-sm font-semibold text-gray-600 uppercase">Player Name</div>
+            <div className="text-sm font-semibold text-gray-600 uppercase text-center">Match Record</div>
+            <div className="text-sm font-semibold text-gray-600 uppercase text-center">Battle Record</div>
+          </div>
+          <div className="space-y-2">
+            {players.map((player) => (
+              <div 
+                key={player.name}
+                className="grid grid-cols-3 gap-4 px-4 py-3 rounded-lg hover:bg-blue-50 transition-colors duration-150"
+              >
+                <div className="text-gray-900 font-medium">{player.name}</div>
+                <div className="text-gray-600 text-center">{player.matchRecord}</div>
+                <div className="text-gray-600 text-center">{player.battleRecord}</div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </main>
