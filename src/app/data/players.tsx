@@ -1,4 +1,22 @@
-export const players = [
+interface BaseSeason {
+  name: string;
+  year: number;
+  matchRecord: string;
+  battleRecord: string;
+}
+
+interface ManagerSeason extends BaseSeason {
+  isManager: boolean;
+}
+
+export interface Player {
+  name: string;
+  slug: string;
+  avatarUrl?: string;
+  seasons: (BaseSeason | ManagerSeason)[];
+}
+
+export const players: Player[] = [
   {
     name: "Bobjoecarl",
     slug: "bobjoecarl",

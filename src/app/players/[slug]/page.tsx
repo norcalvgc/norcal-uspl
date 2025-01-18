@@ -1,9 +1,10 @@
 import { players } from "@/app/data/players";
 import { Metadata } from "next";
+import Image from "next/image";
 
-
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  const player = players.find(p => p.slug === params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const slug = (await params).slug;
+  const player = players.find(p => p.slug === slug);
   
   if (!player) {
     return {
@@ -18,8 +19,13 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   };
 }
 
-export default function PlayerProfile({ params }: { params: { slug: string } }) {
-  const player = players.find(p => p.slug === params.slug);
+export default async function Page({
+  params,
+}: { 
+  params: Promise<{ slug: string }>
+}) {
+  const slug = (await params).slug;
+  const player = players.find(p => p.slug === slug);
 
   if (!player) {
     return (
@@ -43,9 +49,11 @@ export default function PlayerProfile({ params }: { params: { slug: string } }) 
               {/* Profile Picture */}
               <div className="relative w-32 h-32 rounded-full overflow-hidden bg-gray-200 flex items-center justify-center border-4 border-white">
                 {player.avatarUrl ? (
-                  <img 
+                  <Image 
                     src={player.avatarUrl} 
                     alt={`${player.name}'s avatar`}
+                    width={128}
+                    height={128}
                     className="w-full h-full object-cover"
                   />
                 ) : (
