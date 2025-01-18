@@ -12,13 +12,13 @@ export default function PastSeasonsPage() {
     <main className="flex min-h-screen flex-col items-center p-8">
       <div className="w-full max-w-4xl">
         <section className="w-full mb-12">
-          <h2 className="text-3xl font-bold text-center bg-gray-900 text-white py-3 rounded-t-lg">NorCal USPL (Season 3)</h2>
+          <h2 className="text-xl md:text-3xl font-bold text-center bg-gray-900 text-white py-3 rounded-t-lg">NorCal USPL (Season 3)</h2>
           <div className="bg-white shadow-md rounded-b-lg p-6 hover:shadow-lg transition-shadow">
             <div className="mb-6 bg-blue-50 p-4 rounded-lg flex justify-between items-center">
               <div>
                 <h3 className="text-lg font-semibold mb-3 text-blue-800">Final Standing</h3>
-                <div className="grid gap-2">
-                  <p>Regular Season: 4-3-0</p>
+                <div className="grid gap-1 text-sm md:text-base">
+                  <p>Season: 4-3</p>
                   <p>Playoffs: Top 16</p>
                 </div>
               </div>
@@ -52,13 +52,13 @@ export default function PastSeasonsPage() {
         </section>
 
         <section className="w-full mb-12">
-          <h2 className="text-3xl font-bold text-center bg-gray-900 text-white py-3 rounded-t-lg">NorCal USPL (Season 2)</h2>
+          <h2 className="text-xl md:text-3xl font-bold text-center bg-gray-900 text-white py-3 rounded-t-lg">NorCal USPL (Season 2)</h2>
           <div className="bg-white shadow-md rounded-b-lg p-6 hover:shadow-lg transition-shadow">
             <div className="mb-6 bg-blue-50 p-4 rounded-lg flex justify-between items-center">
               <div>
                 <h3 className="text-lg font-semibold mb-3 text-blue-800">Final Standing</h3>
-                <div className="grid gap-2">
-                  <p>Regular Season: 5-2</p>
+                <div className="grid gap-1 text-sm md:text-base">
+                  <p>Season: 5-2</p>
                   <p>Playoffs: Top 4</p>
                 </div>
               </div>
@@ -92,13 +92,13 @@ export default function PastSeasonsPage() {
         </section>
 
         <section className="w-full mb-12">
-          <h2 className="text-3xl font-bold text-center bg-gray-900 text-white py-3 rounded-t-lg">NorCal USPL (Season 1)</h2>
+          <h2 className="text-xl md:text-3xl font-bold text-center bg-gray-900 text-white py-3 rounded-t-lg">NorCal USPL (Season 1)</h2>
           <div className="bg-white shadow-md rounded-b-lg p-6 hover:shadow-lg transition-shadow">
             <div className="mb-6 bg-blue-50 p-4 rounded-lg flex justify-between items-center">
               <div>
                 <h3 className="text-lg font-semibold mb-3 text-blue-800">Final Standing</h3>
-                <div className="grid gap-2">
-                  <p>Regular Season: 5-1</p>
+                <div className="grid gap-1 text-sm md:text-base">
+                  <p>Season: 5-1</p>
                   <p>Playoffs: Top 8</p>
                 </div>
               </div>

@@ -19,7 +19,7 @@ export default function Home() {
         />
 
         <section className="w-full mb-12">
-          <h2 className="text-3xl font-bold text-center bg-gray-900 text-white py-3 rounded-t-lg">NorCal USPL (Season 4)</h2>
+          <h2 className="text-xl md:text-3xl font-bold text-center bg-gray-900 text-white py-3 rounded-t-lg">NorCal USPL (Season 4)</h2>
           <div className="bg-white shadow-md rounded-b-lg p-6 hover:shadow-lg transition-shadow">
           <div className="mb-6 bg-blue-50 p-4 rounded-lg flex justify-between items-center">
               <div>
@@ -54,38 +54,38 @@ export default function Home() {
         </section>
 
         <section className="w-full">
-          <h2 className="text-3xl font-bold mb-6 text-center bg-gray-900 text-white py-3 rounded-t-lg">Week 2 vs. Indiana</h2>
+          <h2 className="text-xl md:text-3xl font-bold mb-6 text-center bg-gray-900 text-white py-3 rounded-t-lg">Week 2 vs. Indiana</h2>
           <div className="bg-white shadow-md rounded-b-lg p-6 hover:shadow-lg transition-shadow">
             <div className="divide-y divide-gray-200">
-              <div className="grid grid-cols-3 items-center hover:bg-blue-50 p-2 transition-colors">
-                <span>gp2332</span>
-                <span className="text-center font-medium text-blue-800">vs.</span>
-                <span className="text-right">45mice</span>
+              <div className="grid grid-cols-[1fr,auto,1fr] md:grid-cols-3 items-center hover:bg-blue-50 p-2 transition-colors gap-2">
+                <span className="truncate">gp2332</span>
+                <span className="text-center font-medium text-blue-800 px-2">vs.</span>
+                <span className="truncate text-left md:text-right">45mice</span>
               </div>
-              <div className="grid grid-cols-3 items-center hover:bg-blue-50 p-2 transition-colors">
-                <span>THATSAplusONE</span>
-                <span className="text-center font-medium text-blue-800">vs.</span>
-                <span className="text-right">Kojay</span>
+              <div className="grid grid-cols-[1fr,auto,1fr] md:grid-cols-3 items-center hover:bg-blue-50 p-2 transition-colors gap-2">
+                <span className="truncate">THATSAplusONE</span>
+                <span className="text-center font-medium text-blue-800 px-2">vs.</span>
+                <span className="truncate text-left md:text-right">Kojay</span>
               </div>
-              <div className="grid grid-cols-3 items-center hover:bg-blue-50 p-2 transition-colors">
-                <span>VivixVGC</span>
-                <span className="text-center font-medium text-blue-800">vs.</span>
-                <span className="text-right">DracoJack</span>
+              <div className="grid grid-cols-[1fr,auto,1fr] md:grid-cols-3 items-center hover:bg-blue-50 p-2 transition-colors gap-2">
+                <span className="truncate">VivixVGC</span>
+                <span className="text-center font-medium text-blue-800 px-2">vs.</span>
+                <span className="truncate text-left md:text-right">DracoJack</span>
               </div>
-              <div className="grid grid-cols-3 items-center hover:bg-blue-50 p-2 transition-colors">
-                <span>kotoripoke</span>
-                <span className="text-center font-medium text-blue-800">vs.</span>
-                <span className="text-right">Badassfrosslass</span>
+              <div className="grid grid-cols-[1fr,auto,1fr] md:grid-cols-3 items-center hover:bg-blue-50 p-2 transition-colors gap-2">
+                <span className="truncate">kotoripoke</span>
+                <span className="text-center font-medium text-blue-800 px-2">vs.</span>
+                <span className="truncate text-left md:text-right">Badassfrosslass</span>
               </div>
-              <div className="grid grid-cols-3 items-center hover:bg-blue-50 p-2 transition-colors">
-                <span>MissingNoL</span>
-                <span className="text-center font-medium text-blue-800">vs.</span>
-                <span className="text-right">Roundybout</span>
+              <div className="grid grid-cols-[1fr,auto,1fr] md:grid-cols-3 items-center hover:bg-blue-50 p-2 transition-colors gap-2">
+                <span className="truncate">MissingNoL</span>
+                <span className="text-center font-medium text-blue-800 px-2">vs.</span>
+                <span className="truncate text-left md:text-right">Roundybout</span>
               </div>
-              <div className="grid grid-cols-3 items-center hover:bg-blue-50 p-2 transition-colors">
-                <span>ToastNoButter</span>
-                <span className="text-center font-medium text-blue-800">vs.</span>
-                <span className="text-right">Theyummybagel</span>
+              <div className="grid grid-cols-[1fr,auto,1fr] md:grid-cols-3 items-center hover:bg-blue-50 p-2 transition-colors gap-2">
+                <span className="truncate">ToastNoButter</span>
+                <span className="text-center font-medium text-blue-800 px-2">vs.</span>
+                <span className="truncate text-left md:text-right">Theyummybagel</span>
               </div>
             </div>
           </div>
