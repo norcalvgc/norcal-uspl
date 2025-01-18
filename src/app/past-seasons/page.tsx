@@ -16,7 +16,7 @@ export default function PastSeasonsPage() {
           <div className="bg-white shadow-md rounded-b-lg p-6 hover:shadow-lg transition-shadow">
             <div className="mb-6 bg-blue-50 p-4 rounded-lg flex justify-between items-center">
               <div>
-                <h3 className="text-lg font-semibold mb-3 text-blue-800">Final Standing</h3>
+                <h3 className="text-lg font-semibold mb-3 text-gray-800">Final Standing</h3>
                 <div className="grid gap-1 text-sm md:text-base">
                   <p>Season: 4-3</p>
                   <p>Playoffs: Top 16</p>
@@ -25,14 +25,14 @@ export default function PastSeasonsPage() {
               <Image src="/norcal-old.png" alt="NorCal VGC Old Logo" width={100} height={100} />
             </div>
             <div className="mb-6">
-              <h3 className="text-lg font-semibold mb-3 text-blue-800">Managers</h3>
+              <h3 className="text-lg font-semibold mb-3 text-gray-800">Managers</h3>
               <div className="grid gap-4">
                 <p>Professor Ragna</p>
                 <p>ZardiChar</p>
               </div>
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-3 text-blue-800">Players</h3>
+              <h3 className="text-lg font-semibold mb-3 text-gray-800">Players</h3>
               <ul className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 <li>Bobjoecarl</li>
                 <li>foiledfeline</li>
@@ -56,7 +56,7 @@ export default function PastSeasonsPage() {
           <div className="bg-white shadow-md rounded-b-lg p-6 hover:shadow-lg transition-shadow">
             <div className="mb-6 bg-blue-50 p-4 rounded-lg flex justify-between items-center">
               <div>
-                <h3 className="text-lg font-semibold mb-3 text-blue-800">Final Standing</h3>
+                <h3 className="text-lg font-semibold mb-3 text-gray-800">Final Standing</h3>
                 <div className="grid gap-1 text-sm md:text-base">
                   <p>Season: 5-2</p>
                   <p>Playoffs: Top 4</p>
@@ -65,14 +65,14 @@ export default function PastSeasonsPage() {
               <Image src="/norcal-old.png" alt="NorCal VGC Old Logo" width={100} height={100} />
             </div>
             <div className="mb-6">
-              <h3 className="text-lg font-semibold mb-3 text-blue-800">Managers</h3>
+              <h3 className="text-lg font-semibold mb-3 text-gray-800">Managers</h3>
               <div className="grid gap-4">
                 <p>Professor Ragna</p>
                 <p>ZardiChar</p>
               </div>
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-3 text-blue-800">Players</h3>
+              <h3 className="text-lg font-semibold mb-3 text-gray-800">Players</h3>
               <ul className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 <li>Alex123</li>
                 <li>BlubVGC</li>
@@ -96,7 +96,7 @@ export default function PastSeasonsPage() {
           <div className="bg-white shadow-md rounded-b-lg p-6 hover:shadow-lg transition-shadow">
             <div className="mb-6 bg-blue-50 p-4 rounded-lg flex justify-between items-center">
               <div>
-                <h3 className="text-lg font-semibold mb-3 text-blue-800">Final Standing</h3>
+                <h3 className="text-lg font-semibold mb-3 text-gray-800">Final Standing</h3>
                 <div className="grid gap-1 text-sm md:text-base">
                   <p>Season: 5-1</p>
                   <p>Playoffs: Top 8</p>
@@ -105,13 +105,13 @@ export default function PastSeasonsPage() {
               <Image src="/norcal-old.png" alt="NorCal VGC Old Logo" width={100} height={100} />
             </div>
             <div className="mb-6">
-              <h3 className="text-lg font-semibold mb-3 text-blue-800">Managers</h3>
+              <h3 className="text-lg font-semibold mb-3 text-gray-800">Managers</h3>
               <div className="grid grid-cols-2 gap-4">
                 <p>Professor Ragna</p>
               </div>
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-3 text-blue-800">Players</h3>
+              <h3 className="text-lg font-semibold mb-3 text-gray-800">Players</h3>
               <ul className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 <li>Alex123</li>
                 <li>Bobjoecarl</li>

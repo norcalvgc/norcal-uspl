@@ -1,11 +1,21 @@
 import { players } from "@/app/data/players";
+import { Metadata } from "next";
 
-interface Season {
-  id: number;
-  name: string;
-  year: number;
-  matchRecord: string;
-  battleRecord: string;
+
+export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+  const player = players.find(p => p.slug === params.slug);
+  
+  if (!player) {
+    return {
+      title: "Player Not Found - NorCal VGC USPL",
+      description: "This player profile could not be found"
+    };
+  }
+
+  return {
+    title: `${player.name} - NorCal VGC USPL`,
+    description: `NorCal VGC USPL Player profile for ${player.name}`
+  };
 }
 
 export default function PlayerProfile({ params }: { params: { slug: string } }) {

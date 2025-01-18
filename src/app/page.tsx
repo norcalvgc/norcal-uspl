@@ -1,5 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Metadata } from "next";
+import { players } from "@/app/data/players";
 
 type MatchRowProps = {
   norcalPlayer: string;
@@ -38,6 +40,16 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+  const season4Players = players.filter(player => 
+    player.seasons.some(season => season.name === "Season 4")
+  );
+
+  const season4Managers = season4Players.filter(player =>
+    player.seasons.some(season => 
+      season.name === "Season 4" && 'isManager' in season && season.isManager
+    )
+  );
+
   return (
     <main className="flex min-h-screen flex-col items-center p-8">
       <div className="w-full max-w-4xl flex flex-col items-center">
@@ -55,31 +67,37 @@ export default function Home() {
           <div className="bg-white shadow-md rounded-b-lg p-6 hover:shadow-lg transition-shadow">
           <div className="mb-6 bg-blue-50 p-4 rounded-lg flex justify-between items-center">
               <div>
-                <h3 className="text-lg font-semibold mb-3 text-blue-800">Standing</h3>
+                <h3 className="text-lg font-semibold mb-3 text-gray-800">Standing</h3>
                 <div className="grid gap-2">
                   <p>Regular Season: 0-0-1</p>
                 </div>
               </div>
             </div>
             <div className="mb-6">
-              <h3 className="text-lg font-semibold mb-3 text-blue-800">Manager</h3>
-              <p>simonxl</p>
+              <h3 className="text-lg font-semibold mb-3 text-gray-800">Manager</h3>
+              {season4Managers.map(manager => (
+                <Link 
+                  key={manager.slug}
+                  href={`/players/${manager.slug}`}
+                  className="text-blue-600 hover:text-blue-800"
+                >
+                  {manager.name}
+                </Link>
+              ))}
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-3 text-blue-800">Players</h3>
+              <h3 className="text-lg font-semibold mb-3 text-gray-800">Players</h3>
               <ul className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                <li>Bobjoecarl</li>
-                <li>eragon</li>
-                <li>gp2332</li>
-                <li>turboisonline</li>
-                <li>kotoripoke</li>
-                <li>lichess</li>
-                <li>ToastNoButter</li>
-                <li>MissingNoL</li>
-                <li>refyrn</li>
-                <li>soduh</li>
-                <li>THATSAplusONE</li>
-                <li>VivixVGC</li>
+                {season4Players.map(player => (
+                  <li key={player.slug}>
+                    <Link 
+                      href={`/players/${player.slug}`}
+                      className="text-blue-600 hover:text-blue-800"
+                    >
+                      {player.name}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
