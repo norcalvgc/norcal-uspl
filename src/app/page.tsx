@@ -1,6 +1,37 @@
 import Image from "next/image";
 import { Metadata } from "next";
 
+type MatchRowProps = {
+  norcalPlayer: string;
+  norcalScore: number;
+  opponentPlayer: string;
+  opponentScore: number;
+  isWin?: boolean;
+  isLoss?: boolean;
+};
+
+const MatchRow = ({ norcalPlayer, norcalScore, opponentPlayer, opponentScore, isWin, isLoss }: MatchRowProps) => {
+  const bgColor = isWin ? 'bg-green-50' : isLoss ? 'bg-red-50' : '';
+  const playerNameColor = isWin ? 'text-green-800' : '';
+
+  return (
+    <div className={`flex flex-col md:flex-row items-center hover:bg-blue-50 p-2 transition-colors gap-2 justify-between ${bgColor}`}>
+      <div className="flex flex-col md:flex-row md:justify-between items-center w-full md:w-[45%]">
+        <span className={`truncate ${isWin ? 'font-medium ' + playerNameColor : ''}`}>{norcalPlayer}</span>
+        <span className="mt-1 md:mt-0 md:ml-1 inline-block min-w-[20px] text-center font-medium bg-gray-100 rounded px-1.5">{norcalScore}</span>
+      </div>
+      <div className="flex items-center">
+        <span className="text-center font-medium text-blue-800 px-2 whitespace-nowrap">vs.</span>
+      </div>
+      <div className="flex flex-col md:flex-row md:justify-between items-center w-full md:w-[45%]">
+        <span className="hidden md:inline-block min-w-[20px] text-center font-medium bg-gray-100 rounded px-1.5">{opponentScore}</span>
+        <span className="truncate md:ml-auto">{opponentPlayer}</span>
+        <span className="mt-1 md:mt-0 md:ml-1 inline-block md:hidden min-w-[20px] text-center font-medium bg-gray-100 rounded px-1.5">{opponentScore}</span>
+      </div>
+    </div>
+  );
+}
+
 export const metadata: Metadata = {
   title: "NorCal VGC USPL - Home",
   description: "Home page for the NorCal VGC team in USPL",
@@ -18,7 +49,8 @@ export default function Home() {
           className="mb-8"
         />
 
-        <section className="w-full mb-12">
+        <div className="flex flex-col gap-12 w-full">
+        <section className="w-full">
           <h2 className="text-xl md:text-3xl font-bold text-center bg-gray-900 text-white py-3 rounded-t-lg">NorCal USPL (Season 4)</h2>
           <div className="bg-white shadow-md rounded-b-lg p-6 hover:shadow-lg transition-shadow">
           <div className="mb-6 bg-blue-50 p-4 rounded-lg flex justify-between items-center">
@@ -57,93 +89,99 @@ export default function Home() {
           <h2 className="text-xl md:text-3xl font-bold mb-6 text-center bg-gray-900 text-white py-3 rounded-t-lg">Week 2 vs. Indiana</h2>
           <div className="bg-white shadow-md rounded-b-lg p-6 hover:shadow-lg transition-shadow">
             <div className="divide-y divide-gray-200">
-              <div className="flex flex-col md:flex-row items-center hover:bg-blue-50 p-2 transition-colors gap-2 justify-between">
-                <div className="flex flex-col md:flex-row md:justify-between items-center w-full md:w-[45%]">
-                  <span className="truncate">gp2332</span>
-                  <span className="mt-1 md:mt-0 md:ml-1 inline-block min-w-[20px] text-center font-medium bg-gray-100 rounded px-1.5">0</span>
-                </div>
-                <div className="flex items-center">
-                  <span className="text-center font-medium text-blue-800 px-2 whitespace-nowrap">vs.</span>
-                </div>
-                <div className="flex flex-col md:flex-row md:justify-between items-center w-full md:w-[45%]">
-                  <span className="hidden md:inline-block min-w-[20px] text-center font-medium bg-gray-100 rounded px-1.5">0</span>
-                  <span className="truncate md:ml-auto">45mice</span>
-                  <span className="mt-1 md:mt-0 md:ml-1 inline-block md:hidden min-w-[20px] text-center font-medium bg-gray-100 rounded px-1.5">0</span>
-                </div>
-              </div>
-              <div className="flex flex-col md:flex-row items-center hover:bg-blue-50 p-2 transition-colors gap-2 justify-between">
-                <div className="flex flex-col md:flex-row md:justify-between items-center w-full md:w-[45%]">
-                  <span className="truncate">THATSAplusONE</span>
-                  <span className="mt-1 md:mt-0 md:ml-1 inline-block min-w-[20px] text-center font-medium bg-gray-100 rounded px-1.5">0</span>
-                </div>
-                <div className="flex items-center">
-                  <span className="text-center font-medium text-blue-800 px-2 whitespace-nowrap">vs.</span>
-                </div>
-                <div className="flex flex-col md:flex-row md:justify-between items-center w-full md:w-[45%]">
-                <span className="hidden md:inline-block min-w-[20px] text-center font-medium bg-gray-100 rounded px-1.5">0</span>
-                <span className="truncate md:ml-auto">Kojay</span>
-                  <span className="mt-1 md:mt-0 md:ml-1 inline-block md:hidden min-w-[20px] text-center font-medium bg-gray-100 rounded px-1.5">0</span>
-                </div>
-              </div>
-              <div className="flex flex-col md:flex-row items-center hover:bg-blue-50 p-2 transition-colors gap-2 justify-between bg-green-50">
-                <div className="flex flex-col md:flex-row md:justify-between items-center w-full md:w-[45%]">
-                  <span className="truncate font-medium text-green-800">VivixVGC</span>
-                  <span className="mt-1 md:mt-0 md:ml-1 inline-block min-w-[20px] text-center font-medium bg-gray-100 rounded px-1.5">2</span>
-                </div>
-                <div className="flex items-center">
-                  <span className="text-center font-medium text-blue-800 px-2 whitespace-nowrap">vs.</span>
-                </div>
-                <div className="flex flex-col md:flex-row md:justify-between items-center w-full md:w-[45%]">
-                <span className="hidden md:inline-block min-w-[20px] text-center font-medium bg-gray-100 rounded px-1.5">1</span>
-                <span className="truncate md:ml-auto">DracoJack</span>
-                  <span className="mt-1 md:mt-0 md:ml-1 inline-block md:hidden min-w-[20px] text-center font-medium bg-gray-100 rounded px-1.5">1</span>
-                </div>
-              </div>
-              <div className="flex flex-col md:flex-row items-center hover:bg-blue-50 p-2 transition-colors gap-2 justify-between">
-                <div className="flex flex-col md:flex-row md:justify-between items-center w-full md:w-[45%]">
-                  <span className="truncate">kotoripoke</span>
-                  <span className="mt-1 md:mt-0 md:ml-1 inline-block min-w-[20px] text-center font-medium bg-gray-100 rounded px-1.5">0</span>
-                </div>
-                <div className="flex items-center">
-                  <span className="text-center font-medium text-blue-800 px-2 whitespace-nowrap">vs.</span>
-                </div>
-                <div className="flex flex-col md:flex-row md:justify-between items-center w-full md:w-[45%]">
-                <span className="hidden md:inline-block min-w-[20px] text-center font-medium bg-gray-100 rounded px-1.5">0</span>
-                <span className="truncate md:ml-auto">Badassfrosslass</span>
-                  <span className="mt-1 md:mt-0 md:ml-1 inline-block md:hidden min-w-[20px] text-center font-medium bg-gray-100 rounded px-1.5">0</span>
-                </div>
-              </div>
-              <div className="flex flex-col md:flex-row items-center hover:bg-blue-50 p-2 transition-colors gap-2 justify-between bg-red-50">
-                <div className="flex flex-col md:flex-row md:justify-between items-center w-full md:w-[45%]">
-                  <span className="truncate">MissingNoL</span>
-                  <span className="mt-1 md:mt-0 md:ml-1 inline-block min-w-[20px] text-center font-medium bg-gray-100 rounded px-1.5">1</span>
-                </div>
-                <div className="flex items-center">
-                  <span className="text-center font-medium text-blue-800 px-2 whitespace-nowrap">vs.</span>
-                </div>
-                <div className="flex flex-col md:flex-row md:justify-between items-center w-full md:w-[45%]">
-                <span className="hidden md:inline-block min-w-[20px] text-center font-medium bg-gray-100 rounded px-1.5">2</span>
-                <span className="truncate md:ml-auto">Roundybout</span>
-                  <span className="mt-1 md:mt-0 md:ml-1 inline-block md:hidden min-w-[20px] text-center font-medium bg-gray-100 rounded px-1.5">2</span>
-                </div>
-              </div>
-              <div className="flex flex-col md:flex-row items-center hover:bg-blue-50 p-2 transition-colors gap-2 justify-between bg-red-50">
-                <div className="flex flex-col md:flex-row md:justify-between items-center w-full md:w-[45%]">
-                  <span className="truncate">ToastNoButter</span>
-                  <span className="mt-1 md:mt-0 md:ml-1 inline-block min-w-[20px] text-center font-medium bg-gray-100 rounded px-1.5">1</span>
-                </div>
-                <div className="flex items-center">
-                  <span className="text-center font-medium text-blue-800 px-2 whitespace-nowrap">vs.</span>
-                </div>
-                <div className="flex flex-col md:flex-row md:justify-between items-center w-full md:w-[45%]">
-                <span className="hidden md:inline-block min-w-[20px] text-center font-medium bg-gray-100 rounded px-1.5">2</span>
-                <span className="truncate md:ml-auto">Theyummybagel</span>
-                  <span className="mt-1 md:mt-0 md:ml-1 inline-block md:hidden min-w-[20px] text-center font-medium bg-gray-100 rounded px-1.5">2</span>
-                </div>
-              </div>
+              <MatchRow 
+                norcalPlayer="gp2332"
+                norcalScore={0}
+                opponentPlayer="45mice"
+                opponentScore={0}
+              />
+              <MatchRow 
+                norcalPlayer="THATSAplusONE"
+                norcalScore={0}
+                opponentPlayer="Kojay"
+                opponentScore={0}
+              />
+              <MatchRow 
+                norcalPlayer="VivixVGC"
+                norcalScore={2}
+                opponentPlayer="DracoJack"
+                opponentScore={1}
+                isWin={true}
+              />
+              <MatchRow 
+                norcalPlayer="kotoripoke"
+                norcalScore={0}
+                opponentPlayer="Badassfrosslass"
+                opponentScore={0}
+              />
+              <MatchRow 
+                norcalPlayer="MissingNoL"
+                norcalScore={1}
+                opponentPlayer="Roundybout"
+                opponentScore={2}
+                isLoss={true}
+              />
+              <MatchRow 
+                norcalPlayer="ToastNoButter"
+                norcalScore={1}
+                opponentPlayer="Theyummybagel"
+                opponentScore={2}
+                isLoss={true}
+              />
             </div>
           </div>
         </section>
+
+        <section className="w-full">
+          <h2 className="text-xl md:text-3xl font-bold mb-6 text-center bg-gray-900 text-white py-3 rounded-t-lg">Week 1 vs. Connecticut</h2>
+          <div className="bg-white shadow-md rounded-b-lg p-6 hover:shadow-lg transition-shadow">
+            <div className="divide-y divide-gray-200">
+              <MatchRow 
+                norcalPlayer="eragon"
+                norcalScore={2}
+                opponentPlayer="hush"
+                opponentScore={0}
+                isWin={true}
+              />
+              <MatchRow 
+                norcalPlayer="turboisonline"
+                norcalScore={2}
+                opponentPlayer="zapguppy"
+                opponentScore={1}
+                isWin={true}
+              />
+              <MatchRow 
+                norcalPlayer="ToastNoButter"
+                norcalScore={2}
+                opponentPlayer="whim3102"
+                opponentScore={1}
+                isWin={true}
+              />
+              <MatchRow 
+                norcalPlayer="MissingNoL"
+                norcalScore={1}
+                opponentPlayer="official_amazon.com"
+                opponentScore={2}
+                isLoss={true}
+              />
+              <MatchRow 
+                norcalPlayer="soduh"
+                norcalScore={0}
+                opponentPlayer="danielmarcelo"
+                opponentScore={2}
+                isLoss={true}
+              />
+              <MatchRow 
+                norcalPlayer="VivixVGC"
+                norcalScore={1}
+                opponentPlayer="vcicco"
+                opponentScore={2}
+                isLoss={true}
+              />
+            </div>
+          </div>
+        </section>
+        </div>
       </div>
     </main>
   );
