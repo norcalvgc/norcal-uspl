@@ -88,6 +88,7 @@ export default function Home() {
         <section className="w-full">
           <h2 className="text-xl md:text-3xl font-bold mb-6 text-center bg-gray-900 text-white py-3 rounded-t-lg">Week 2 vs. Indiana</h2>
           <div className="bg-white shadow-md rounded-b-lg p-6 hover:shadow-lg transition-shadow">
+          <p className="text-gray-600 text-sm mb-4">Dates: 1/13/25 - 1/19/25</p>
             <div className="divide-y divide-gray-200">
               <MatchRow 
                 norcalPlayer="gp2332"
@@ -135,6 +136,7 @@ export default function Home() {
         <section className="w-full">
           <h2 className="text-xl md:text-3xl font-bold mb-6 text-center bg-gray-900 text-white py-3 rounded-t-lg">Week 1 vs. Connecticut</h2>
           <div className="bg-white shadow-md rounded-b-lg p-6 hover:shadow-lg transition-shadow">
+            <p className="text-gray-600 text-sm mb-4">Dates: 1/6/25 - 1/12/25</p>
             <div className="divide-y divide-gray-200">
               <MatchRow 
                 norcalPlayer="eragon"
