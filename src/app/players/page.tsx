@@ -18,12 +18,12 @@ const players: Player[] = [
   { name: "turboisonline", matchRecord: "1-0", battleRecord: "2-1" },
   { name: "kotoripoke", matchRecord: "0-0", battleRecord: "0-0" },
   { name: "lichess", matchRecord: "0-0", battleRecord: "0-0" },
-  { name: "ToastNoButter", matchRecord: "1-0", battleRecord: "2-1" },
-  { name: "MissingNoL", matchRecord: "0-1", battleRecord: "1-2" },
+  { name: "ToastNoButter", matchRecord: "1-1", battleRecord: "3-3" },
+  { name: "MissingNoL", matchRecord: "0-2", battleRecord: "2-4" },
   { name: "refyrn", matchRecord: "0-0", battleRecord: "0-0" },
   { name: "soduh", matchRecord: "0-1", battleRecord: "0-2" },
   { name: "THATSAplusONE", matchRecord: "0-0", battleRecord: "0-0" },
-  { name: "VivixVGC", matchRecord: "0-1", battleRecord: "1-2" },
+  { name: "VivixVGC", matchRecord: "1-1", battleRecord: "3-3" },
 ].sort((a, b) => a.name.localeCompare(b.name));
 
 export default function PlayersPage() {
