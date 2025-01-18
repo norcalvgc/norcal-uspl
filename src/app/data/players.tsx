@@ -197,5 +197,18 @@ export const players = [
         battleRecord: "4-7",
       },
     ]
+  },
+  {
+    name: "VivixVGC",
+    slug: "vivixvgc",
+    // avatarUrl: "/players/vivixvgc.png",
+    seasons: [
+      {
+        name: "Season 4",
+        year: 2025,
+        matchRecord: "1-1",
+        battleRecord: "3-3",
+      },
+    ]
   }
 ]

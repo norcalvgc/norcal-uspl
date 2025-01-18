@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
-import { players } from "@/app/data/players";
+import { getSeasonPlayers, getSeasonManagers } from "@/app/utils";
 
 type MatchRowProps = {
   norcalPlayer: string;
@@ -40,15 +40,8 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  const season4Players = players.filter(player => 
-    player.seasons.some(season => season.name === "Season 4")
-  );
-
-  const season4Managers = season4Players.filter(player =>
-    player.seasons.some(season => 
-      season.name === "Season 4" && 'isManager' in season && season.isManager
-    )
-  );
+  const season4Players = getSeasonPlayers("Season 4");
+  const season4Managers = getSeasonManagers("Season 4");
 
   return (
     <main className="flex min-h-screen flex-col items-center p-8">
@@ -92,7 +85,7 @@ export default function Home() {
                   <li key={player.slug}>
                     <Link 
                       href={`/players/${player.slug}`}
-                      className="text-blue-600 hover:text-blue-800"
+                      className="text-blue-600"
                     >
                       {player.name}
                     </Link>
