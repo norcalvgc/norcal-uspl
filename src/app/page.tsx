@@ -57,35 +57,82 @@ export default function Home() {
           <h2 className="text-xl md:text-3xl font-bold mb-6 text-center bg-gray-900 text-white py-3 rounded-t-lg">Week 2 vs. Indiana</h2>
           <div className="bg-white shadow-md rounded-b-lg p-6 hover:shadow-lg transition-shadow">
             <div className="divide-y divide-gray-200">
-              <div className="grid grid-cols-[1fr,auto,1fr] md:grid-cols-3 items-center hover:bg-blue-50 p-2 transition-colors gap-2">
-                <span className="truncate">gp2332</span>
-                <span className="text-center font-medium text-blue-800 px-2">vs.</span>
-                <span className="truncate text-left md:text-right">45mice</span>
+            <div className="flex flex-col md:flex-row items-center hover:bg-blue-50 p-2 transition-colors gap-2 justify-between">
+                <div className="flex justify-between items-center w-full">
+                  <span className="truncate">gp2332</span>
+                  <span className="ml-1 inline-block min-w-[20px] text-center font-medium bg-gray-100 rounded px-1.5">0</span>
+                </div>
+                <span className="text-center font-medium text-blue-800 px-2 whitespace-nowrap">vs.</span>
+                <div className="flex justify-between items-center w-full">
+                  <span className="inline-block min-w-[20px] text-center font-medium bg-gray-100 rounded px-1.5">0</span>
+                  <span className="truncate">45mice</span>
+                </div>
               </div>
-              <div className="grid grid-cols-[1fr,auto,1fr] md:grid-cols-3 items-center hover:bg-blue-50 p-2 transition-colors gap-2">
-                <span className="truncate">THATSAplusONE</span>
-                <span className="text-center font-medium text-blue-800 px-2">vs.</span>
-                <span className="truncate text-left md:text-right">Kojay</span>
+              {/* <div className="flex flex-col md:flex-row items-center hover:bg-blue-50 p-2 transition-colors gap-2 justify-between">
+                <div className="flex justify-between items-center w-full md:w-[40%] md:justify-end">
+                  <span className="truncate">gp2332</span>
+                  <span className="ml-1 inline-block min-w-[20px] text-center font-medium bg-gray-100 rounded px-1.5">0</span>
+                </div>
+                <span className="text-center font-medium text-blue-800 px-2 whitespace-nowrap">vs.</span>
+                <div className="flex justify-between items-center w-full md:w-[40%] md:justify-end">
+                  <span className="inline-block min-w-[20px] text-center font-medium bg-gray-100 rounded px-1.5">0</span>
+                  <span className="truncate">45mice</span>
+                </div>
+              </div> */}
+              <div className="flex flex-col md:flex-row items-center hover:bg-blue-50 p-2 transition-colors gap-2 justify-between">
+                <div className="flex justify-between items-center w-full">
+                  <span className="truncate">THATSAplusONE</span>
+                  <span className="ml-1 inline-block min-w-[20px] text-center font-medium bg-gray-100 rounded px-1.5">0</span>
+                </div>
+                <span className="text-center font-medium text-blue-800 px-2 whitespace-nowrap">vs.</span>
+                <div className="flex justify-between items-center w-full">
+                  <span className="inline-block min-w-[20px] text-center font-medium bg-gray-100 rounded px-1.5">0</span>
+                  <span className="truncate">Kojay</span>
+                </div>
               </div>
-              <div className="grid grid-cols-[1fr,auto,1fr] md:grid-cols-3 items-center hover:bg-blue-50 p-2 transition-colors gap-2">
-                <span className="truncate">VivixVGC</span>
-                <span className="text-center font-medium text-blue-800 px-2">vs.</span>
-                <span className="truncate text-left md:text-right">DracoJack</span>
+              <div className="flex flex-col md:flex-row items-center hover:bg-blue-50 p-2 transition-colors gap-2 justify-between bg-green-50">
+                <div className="flex justify-between items-center w-full">
+                  <span className="truncate font-medium text-green-800">VivixVGC</span>
+                  <span className="ml-1 inline-block min-w-[20px] text-center font-bold bg-green-200 rounded px-1.5">2</span>
+                </div>
+                <span className="text-center font-medium text-blue-800 px-2 whitespace-nowrap">vs.</span>
+                <div className="flex justify-between items-center w-full">
+                  <span className="inline-block min-w-[20px] text-center font-bold bg-green-200 rounded px-1.5">1</span>
+                  <span className="truncate">DracoJack</span>
+                </div>
               </div>
-              <div className="grid grid-cols-[1fr,auto,1fr] md:grid-cols-3 items-center hover:bg-blue-50 p-2 transition-colors gap-2">
-                <span className="truncate">kotoripoke</span>
-                <span className="text-center font-medium text-blue-800 px-2">vs.</span>
-                <span className="truncate text-left md:text-right">Badassfrosslass</span>
+              <div className="flex flex-col md:flex-row items-center hover:bg-blue-50 p-2 transition-colors gap-2 justify-between">
+                <div className="flex justify-between items-center w-full">
+                  <span className="truncate">kotoripoke</span>
+                  <span className="ml-1 inline-block min-w-[20px] text-center font-medium bg-gray-100 rounded px-1.5">0</span>
+                </div>
+                <span className="text-center font-medium text-blue-800 px-2 whitespace-nowrap">vs.</span>
+                <div className="flex justify-between items-center w-full">
+                  <span className="inline-block min-w-[20px] text-center font-medium bg-gray-100 rounded px-1.5">0</span>
+                  <span className="truncate">Badassfrosslass</span>
+                </div>
               </div>
-              <div className="grid grid-cols-[1fr,auto,1fr] md:grid-cols-3 items-center hover:bg-blue-50 p-2 transition-colors gap-2">
-                <span className="truncate">MissingNoL</span>
-                <span className="text-center font-medium text-blue-800 px-2">vs.</span>
-                <span className="truncate text-left md:text-right">Roundybout</span>
+              <div className="flex flex-col md:flex-row items-center hover:bg-blue-50 p-2 transition-colors gap-2 justify-between bg-red-50">
+                <div className="flex justify-between items-center w-full">
+                  <span className="truncate">MissingNoL</span>
+                  <span className="ml-1 inline-block min-w-[20px] text-center font-bold bg-red-200 rounded px-1.5">1</span>
+                </div>
+                <span className="text-center font-medium text-blue-800 px-2 whitespace-nowrap">vs.</span>
+                <div className="flex justify-between items-center w-full">
+                  <span className="inline-block min-w-[20px] text-center font-bold bg-red-200 rounded px-1.5">2</span>
+                  <span className="truncate">Roundybout</span>
+                </div>
               </div>
-              <div className="grid grid-cols-[1fr,auto,1fr] md:grid-cols-3 items-center hover:bg-blue-50 p-2 transition-colors gap-2">
-                <span className="truncate">ToastNoButter</span>
-                <span className="text-center font-medium text-blue-800 px-2">vs.</span>
-                <span className="truncate text-left md:text-right">Theyummybagel</span>
+              <div className="flex flex-col md:flex-row items-center hover:bg-blue-50 p-2 transition-colors gap-2 justify-between bg-red-50">
+                <div className="flex justify-between items-center w-full">
+                  <span className="truncate">ToastNoButter</span>
+                  <span className="ml-1 inline-block min-w-[20px] text-center font-bold bg-red-200 rounded px-1.5">1</span>
+                </div>
+                <span className="text-center font-medium text-blue-800 px-2 whitespace-nowrap">vs.</span>
+                <div className="flex justify-between items-center w-full">
+                  <span className="inline-block min-w-[20px] text-center font-bold bg-red-200 rounded px-1.5">2</span>
+                  <span className="truncate">Theyummybagel</span>
+                </div>
               </div>
             </div>
           </div>
