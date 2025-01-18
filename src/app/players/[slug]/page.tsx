@@ -85,7 +85,7 @@ export default function PlayerProfile({ params }: { params: { slug: string } }) 
                 ];
                 return (
                   <div
-                    key={season.id}
+                    key={season.name}
                     className={`relative inline-flex items-center px-4 py-2 rounded-lg font-medium text-sm transition-colors ${colors[index % colors.length]}`}
                   >
                     <span className="relative z-10">{season.name}</span>
@@ -98,8 +98,15 @@ export default function PlayerProfile({ params }: { params: { slug: string } }) 
 
           {/* Season Stats */}
           {player.seasons.map((season) => (
-            <div key={season.id} className="p-6 border-t border-gray-200">
-              <h2 className="text-xl font-semibold mb-4 text-gray-800">{season.name} Stats</h2>
+            <div key={season.name} className="p-6 border-t border-gray-200">
+              <div className="flex items-center gap-3 mb-4">
+                <h2 className="text-xl font-semibold text-gray-800">{season.name} Stats</h2>
+                {'isManager' in season && season.isManager ? (
+                  <span className="px-2 py-1 text-sm font-medium bg-amber-100 text-amber-800 rounded">Manager</span>
+                ) : (
+                  <span className="px-2 py-1 text-sm font-medium bg-green-100 text-green-800 rounded">Player</span>
+                )}
+              </div>
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-gray-50 p-4 rounded-lg">
                   <p className="text-sm text-gray-500">Match Record</p>
