@@ -16,13 +16,13 @@ const players: Player[] = [
   { name: "eragon", matchRecord: "1-0", battleRecord: "2-0" },
   { name: "gp2332", matchRecord: "0-0", battleRecord: "0-0" },
   { name: "turboisonline", matchRecord: "1-0", battleRecord: "2-1" },
-  { name: "kotoripoke", matchRecord: "0-0", battleRecord: "0-0" },
+  { name: "kotoripoke", matchRecord: "1-0", battleRecord: "2-0" },
   { name: "lichess", matchRecord: "0-0", battleRecord: "0-0" },
   { name: "ToastNoButter", matchRecord: "1-1", battleRecord: "3-3" },
   { name: "MissingNoL", matchRecord: "0-2", battleRecord: "2-4" },
   { name: "refyrn", matchRecord: "0-0", battleRecord: "0-0" },
   { name: "soduh", matchRecord: "0-1", battleRecord: "0-2" },
-  { name: "THATSAplusONE", matchRecord: "0-0", battleRecord: "0-0" },
+  { name: "THATSAplusONE", matchRecord: "1-0", battleRecord: "2-0" },
   { name: "VivixVGC", matchRecord: "1-1", battleRecord: "3-3" },
 ].sort((a, b) => a.name.localeCompare(b.name));
 

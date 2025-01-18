@@ -112,9 +112,10 @@ export default function Home() {
               />
               <MatchRow 
                 norcalPlayer="kotoripoke"
-                norcalScore={0}
+                norcalScore={2}
                 opponentPlayer="Badassfrosslass"
                 opponentScore={0}
+                isWin={true}
               />
               <MatchRow 
                 norcalPlayer="MissingNoL"
