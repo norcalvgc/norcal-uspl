@@ -1,6 +1,7 @@
 import Image from "next/image";
-
+import Link from "next/link";
 import { Metadata } from "next";
+import { getSeasonManagers, getSeasonPlayers } from "@/app/utils";
 
 export const metadata: Metadata = {
   title: "NorCal VGC USPL - Past Seasons",
@@ -8,6 +9,14 @@ export const metadata: Metadata = {
 };
 
 export default function PastSeasonsPage() {
+  const season3Players = getSeasonPlayers("Season 3");
+  const season2Players = getSeasonPlayers("Season 2");
+  const season1Players = getSeasonPlayers("Season 1");
+
+  const season3Managers = getSeasonManagers("Season 3");
+  const season2Managers = getSeasonManagers("Season 2");
+  const season1Managers = getSeasonManagers("Season 1");
+
   return (
     <main className="flex min-h-screen flex-col items-center p-8">
       <div className="w-full max-w-4xl">
@@ -27,25 +36,30 @@ export default function PastSeasonsPage() {
             <div className="mb-6">
               <h3 className="text-lg font-semibold mb-3 text-gray-800">Managers</h3>
               <div className="grid gap-4">
-                <p>Professor Ragna</p>
-                <p>ZardiChar</p>
+                {season3Managers.map(manager => (
+                  <Link 
+                    key={manager.slug}
+                    href={`/players/${manager.slug}`}
+                    className="text-blue-600"
+                  >
+                    {manager.name}
+                  </Link>
+                ))}
               </div>
             </div>
             <div>
               <h3 className="text-lg font-semibold mb-3 text-gray-800">Players</h3>
               <ul className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                <li>Bobjoecarl</li>
-                <li>foiledfeline</li>
-                <li>Frog</li>
-                <li>jiho</li>
-                <li>lichess</li>
-                <li>Nyle</li>
-                <li>Rocket Grunt</li>
-                <li>senyo</li>
-                <li>sglez124</li>
-                <li>sheik</li>
-                <li>ToastNoButter</li>
-                <li>turboisonline</li>
+                {season3Players.map(player => (
+                  <li key={player.slug}>
+                    <Link 
+                      href={`/players/${player.slug}`}
+                      className="text-blue-600"
+                    >
+                      {player.name}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
@@ -67,25 +81,30 @@ export default function PastSeasonsPage() {
             <div className="mb-6">
               <h3 className="text-lg font-semibold mb-3 text-gray-800">Managers</h3>
               <div className="grid gap-4">
-                <p>Professor Ragna</p>
-                <p>ZardiChar</p>
+                {season2Managers.map(manager => (
+                  <Link 
+                    key={manager.slug}
+                    href={`/players/${manager.slug}`}
+                    className="text-blue-600"
+                  >
+                    {manager.name}
+                  </Link>
+                ))}
               </div>
             </div>
             <div>
               <h3 className="text-lg font-semibold mb-3 text-gray-800">Players</h3>
               <ul className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                <li>Alex123</li>
-                <li>BlubVGC</li>
-                <li>Bobjoecarl</li>
-                <li>dtgale</li>
-                <li>GunnZalez</li>
-                <li>IronManVGC</li>
-                <li>Nyle</li>
-                <li>Relinnquish</li>
-                <li>sheik</li>
-                <li>StellarKitty</li>
-                <li>ToastNoButter</li>
-                <li>zephyr</li>
+                {season2Players.map(player => (
+                  <li key={player.slug}>
+                    <Link 
+                      href={`/players/${player.slug}`}
+                      className="text-blue-600"
+                    >
+                      {player.name}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
@@ -107,22 +126,30 @@ export default function PastSeasonsPage() {
             <div className="mb-6">
               <h3 className="text-lg font-semibold mb-3 text-gray-800">Managers</h3>
               <div className="grid grid-cols-2 gap-4">
-                <p>Professor Ragna</p>
+                {season1Managers.map(manager => (
+                  <Link 
+                    key={manager.slug}
+                    href={`/players/${manager.slug}`}
+                    className="text-blue-600"
+                  >
+                    {manager.name}
+                  </Link>
+                ))}
               </div>
             </div>
             <div>
               <h3 className="text-lg font-semibold mb-3 text-gray-800">Players</h3>
               <ul className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                <li>Alex123</li>
-                <li>Bobjoecarl</li>
-                <li>dtgale</li>
-                <li>dtsmid</li>
-                <li>GunnZalez</li>
-                <li>jonas</li>
-                <li>KantoClark</li>
-                <li>Liminator</li>
-                <li>Neil_VGC</li>
-                <li>ZardiChar</li>
+                {season1Players.map(player => (
+                  <li key={player.slug}>
+                    <Link 
+                      href={`/players/${player.slug}`}
+                      className="text-blue-600"
+                    >
+                      {player.name}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
