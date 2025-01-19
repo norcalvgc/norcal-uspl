@@ -75,11 +75,9 @@ export default async function Page({
 
               {/* Player Name */}
               <div className="text-center md:text-left">
-                {/* <h1 className="text-2xl md:text-4xl font-bold text-white mb-2"> */}
                 <h1 className="text-2xl md:text-4xl font-bold text-white">
                   {player.name}
                 </h1>
-                {/* <p className="text-blue-100">NorCal VGC Player</p> */}
               </div>
             </div>
           </div>
@@ -125,16 +123,38 @@ export default async function Page({
                   <span className="px-2 py-1 text-sm font-medium bg-green-100 text-green-800 rounded">Player</span>
                 )}
               </div>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="bg-gray-50 p-4 rounded-lg">
-                  <p className="text-sm text-gray-500">Match Record</p>
-                  <p className="text-xl font-semibold">{season.matchRecord}</p>
-                </div>
-                <div className="bg-gray-50 p-4 rounded-lg">
-                  <p className="text-sm text-gray-500">Battle Record</p>
-                  <p className="text-xl font-semibold">{season.battleRecord}</p>
+              
+              {/* Regular Season Stats */}
+              <div className="mb-4">
+                <h3 className="text-sm font-medium text-gray-600 mb-2">Regular Season</h3>
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="bg-gray-50 p-4 rounded-lg">
+                    <p className="text-sm text-gray-500">Match Record</p>
+                    <p className="text-xl font-semibold">{season.matchRecord}</p>
+                  </div>
+                  <div className="bg-gray-50 p-4 rounded-lg">
+                    <p className="text-sm text-gray-500">Battle Record</p>
+                    <p className="text-xl font-semibold">{season.battleRecord}</p>
+                  </div>
                 </div>
               </div>
+
+              {/* Playoff Stats */}
+              {'playoffMatchRecord' in season && 'playoffBattleRecord' in season && (
+                <div>
+                  <h3 className="text-sm font-medium text-gray-600 mb-2">Playoffs</h3>
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="bg-blue-50 p-4 rounded-lg">
+                      <p className="text-sm text-gray-500">Match Record</p>
+                      <p className="text-xl font-semibold">{season.playoffMatchRecord}</p>
+                    </div>
+                    <div className="bg-blue-50 p-4 rounded-lg">
+                      <p className="text-sm text-gray-500">Battle Record</p>
+                      <p className="text-xl font-semibold">{season.playoffBattleRecord}</p>
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
           ))}
         </div>
