@@ -1,6 +1,7 @@
 import Image from "next/image";
-
+import Link from "next/link";
 import { Metadata } from "next";
+import { getSeasonPlayers } from "@/app/utils";
 
 export const metadata: Metadata = {
   title: "NorCal VGC USPL - Past Seasons",
@@ -8,6 +9,8 @@ export const metadata: Metadata = {
 };
 
 export default function PastSeasonsPage() {
+  const season3Players = getSeasonPlayers("Season 3");
+
   return (
     <main className="flex min-h-screen flex-col items-center p-8">
       <div className="w-full max-w-4xl">
@@ -34,18 +37,16 @@ export default function PastSeasonsPage() {
             <div>
               <h3 className="text-lg font-semibold mb-3 text-gray-800">Players</h3>
               <ul className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                <li>Bobjoecarl</li>
-                <li>foiledfeline</li>
-                <li>Frog</li>
-                <li>jiho</li>
-                <li>lichess</li>
-                <li>Nyle</li>
-                <li>Rocket Grunt</li>
-                <li>senyo</li>
-                <li>sglez124</li>
-                <li>sheik</li>
-                <li>ToastNoButter</li>
-                <li>turboisonline</li>
+                {season3Players.map(player => (
+                  <li key={player.slug}>
+                    <Link 
+                      href={`/players/${player.slug}`}
+                      className="text-blue-600"
+                    >
+                      {player.name}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
