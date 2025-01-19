@@ -315,7 +315,7 @@ export const players: Player[] = [
   {
     name: "Professor Ragna",
     slug: "professorragna",
-    // avatarUrl: "/players/professor-ragna.png",
+    avatarUrl: "/players/professorragna.jpg",
     seasons: [
       {
         name: "Season 3",
