@@ -416,6 +416,12 @@ export const players: Player[] = [
         matchRecord: "5-0",
         battleRecord: "10-2",
       },
+      {
+        name: "Season 2",
+        year: 2023,
+        matchRecord: "0-3",
+        battleRecord: "1-6",
+      }
     ]
   },
   {
