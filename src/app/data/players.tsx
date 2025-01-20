@@ -159,8 +159,8 @@ export const players: Player[] = [
       {
         name: "Season 4",
         year: 2025,
-        matchRecord: "0-0",
-        battleRecord: "0-0",
+        matchRecord: "1-0",
+        battleRecord: "2-1",
       },
     ]
   },
