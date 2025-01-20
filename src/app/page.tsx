@@ -103,9 +103,10 @@ export default function Home() {
             <div className="divide-y divide-gray-200">
               <MatchRow 
                 norcalPlayer="gp2332"
-                norcalScore={0}
+                norcalScore={2}
                 opponentPlayer="45mice"
-                opponentScore={0}
+                opponentScore={1}
+                isWin={true}
               />
               <MatchRow 
                 norcalPlayer="THATSAplusONE"
