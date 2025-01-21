@@ -125,6 +125,38 @@ export const players: Player[] = [
     ]
   },
   {
+    name: "dtgale",
+    slug: "dtgale",
+    // avatarUrl: "/players/dtgale.png",
+    seasons: [
+      {
+        name: "Season 2",
+        year: 2023,
+        matchRecord: "2-1",
+        battleRecord: "4-3",
+      },
+      {
+        name: "Season 1",
+        year: 2022,
+        matchRecord: "3-0",
+        battleRecord: "6-1",
+      },
+    ]
+  },
+  {
+    name: "dtsmid",
+    slug: "dtsmid",
+    // avatarUrl: "/players/dtsmid.png",
+    seasons: [
+      {
+        name: "Season 1",
+        year: 2022,
+        matchRecord: "2-1",
+        battleRecord: "4-3",
+      },
+    ]
+  },
+  {
     name: "eragon",
     slug: "eragon",
     // avatarUrl: "/players/eragon.png",
@@ -171,8 +203,66 @@ export const players: Player[] = [
       {
         name: "Season 4",
         year: 2025,
-        matchRecord: "0-0",
-        battleRecord: "0-0",
+        matchRecord: "1-0",
+        battleRecord: "2-1",
+      },
+    ]
+  },
+  {
+    name: "GunnZalez",
+    slug: "gunnzalez",
+    // avatarUrl: "/players/gunnzalez.png",
+    seasons: [
+      {
+        name: "Season 2",
+        year: 2023,
+        matchRecord: "0-2",
+        battleRecord: "2-4",
+      },
+      {
+        name: "Season 1",
+        year: 2022,
+        matchRecord: "2-0",
+        battleRecord: "4-1",
+      },
+    ]
+  },
+  {
+    name: "IronManVGC",
+    slug: "ironmanvgc",
+    // avatarUrl: "/players/ironmanvgc.png",
+    seasons: [
+      {
+        name: "Season 2",
+        year: 2023,
+        matchRecord: "0-2",
+        battleRecord: "0-1",
+      },
+    ]
+  },
+  {
+    name: "jiho",
+    slug: "jiho",
+    // avatarUrl: "/players/jiho.png",
+    seasons: [
+      {
+        name: "Season 3",
+        year: 2024,
+        matchRecord: "4-1",
+        battleRecord: "8-4",
+      },
+    ]
+  },
+  {
+    name: "KantoClark",
+    slug: "kantoclark",
+    // avatarUrl: "/players/kantoclark.png",
+    seasons: [
+      {
+        name: "Season 1",
+        year: 2022,
+        matchRecord: "1-1",
+        battleRecord: "3-3",
       },
     ]
   },
@@ -428,6 +518,15 @@ export const players: Player[] = [
         matchRecord: "5-0",
         battleRecord: "10-2",
       },
+<<<<<<< HEAD
+=======
+      {
+        name: "Season 2",
+        year: 2023,
+        matchRecord: "0-3",
+        battleRecord: "1-6",
+      }
+>>>>>>> main
     ]
   },
   {

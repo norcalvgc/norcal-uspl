@@ -62,7 +62,7 @@ export default function Home() {
               <div>
                 <h3 className="text-lg font-semibold mb-3 text-gray-800">Standing</h3>
                 <div className="grid gap-2">
-                  <p>Regular Season: 0-0-1</p>
+                  <p>Regular Season: 1-0-1</p>
                 </div>
               </div>
             </div>
@@ -97,15 +97,61 @@ export default function Home() {
         </section>
 
         <section className="w-full">
+          <h2 className="text-xl md:text-3xl font-bold mb-6 text-center bg-gray-900 text-white py-3 rounded-t-lg">Week 3 vs. Michigan</h2>
+          <div className="bg-white shadow-md rounded-b-lg p-6 hover:shadow-lg transition-shadow">
+          <p className="text-gray-600 text-sm mb-4">Dates: 1/20/25 - 1/26/25</p>
+            <div className="divide-y divide-gray-200">
+              <MatchRow 
+                norcalPlayer="MissingNoL"
+                norcalScore={0}
+                opponentPlayer="kamikazekidgc"
+                opponentScore={0}
+              />
+              <MatchRow 
+                norcalPlayer="Bobjoecarl"
+                norcalScore={0}
+                opponentPlayer="itachivgc"
+                opponentScore={0}
+              />
+              <MatchRow 
+                norcalPlayer="eragon"
+                norcalScore={0}
+                opponentPlayer="misspeller"
+                opponentScore={0}
+              />
+              <MatchRow 
+                norcalPlayer="turboisonline"
+                norcalScore={0}
+                opponentPlayer="izzywooperstan"
+                opponentScore={0}
+              />
+              <MatchRow 
+                norcalPlayer="kotoripoke"
+                norcalScore={0}
+                opponentPlayer="aydenbarber_"
+                opponentScore={0}
+              />
+              <MatchRow 
+                norcalPlayer="ToastNoButter"
+                norcalScore={0}
+                opponentPlayer="trunksshe"
+                opponentScore={0}
+              />
+            </div>
+          </div>
+        </section>
+
+        <section className="w-full">
           <h2 className="text-xl md:text-3xl font-bold mb-6 text-center bg-gray-900 text-white py-3 rounded-t-lg">Week 2 vs. Indiana</h2>
           <div className="bg-white shadow-md rounded-b-lg p-6 hover:shadow-lg transition-shadow">
           <p className="text-gray-600 text-sm mb-4">Dates: 1/13/25 - 1/19/25</p>
             <div className="divide-y divide-gray-200">
               <MatchRow 
                 norcalPlayer="gp2332"
-                norcalScore={0}
+                norcalScore={2}
                 opponentPlayer="45mice"
-                opponentScore={0}
+                opponentScore={1}
+                isWin={true}
               />
               <MatchRow 
                 norcalPlayer="THATSAplusONE"
