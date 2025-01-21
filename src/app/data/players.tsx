@@ -3,6 +3,8 @@ interface BaseSeason {
   year: number;
   matchRecord: string;
   battleRecord: string;
+  playoffMatchRecord?: string;
+  playoffBattleRecord?: string;
 }
 
 interface ManagerSeason extends BaseSeason {
@@ -102,12 +104,16 @@ export const players: Player[] = [
         year: 2023,
         matchRecord: "2-1",
         battleRecord: "4-3",
+        playoffMatchRecord: "0-0",
+        playoffBattleRecord: "0-0",
       },
       {
         name: "Season 1",
         year: 2022,
         matchRecord: "3-0",
         battleRecord: "6-1",
+        playoffMatchRecord: "0-1",
+        playoffBattleRecord: "0-2",
       },
     ]
   },
@@ -121,38 +127,8 @@ export const players: Player[] = [
         year: 2022,
         matchRecord: "2-1",
         battleRecord: "4-3",
-      },
-    ]
-  },
-  {
-    name: "dtgale",
-    slug: "dtgale",
-    // avatarUrl: "/players/dtgale.png",
-    seasons: [
-      {
-        name: "Season 2",
-        year: 2023,
-        matchRecord: "2-1",
-        battleRecord: "4-3",
-      },
-      {
-        name: "Season 1",
-        year: 2022,
-        matchRecord: "3-0",
-        battleRecord: "6-1",
-      },
-    ]
-  },
-  {
-    name: "dtsmid",
-    slug: "dtsmid",
-    // avatarUrl: "/players/dtsmid.png",
-    seasons: [
-      {
-        name: "Season 1",
-        year: 2022,
-        matchRecord: "2-1",
-        battleRecord: "4-3",
+        playoffMatchRecord: "0-0",
+        playoffBattleRecord: "0-0",
       },
     ]
   },
@@ -179,6 +155,8 @@ export const players: Player[] = [
         year: 2024,
         matchRecord: "2-1",
         battleRecord: "4-2",
+        playoffMatchRecord: "0-0",
+        playoffBattleRecord: "0-0",
       },
     ]
   },
@@ -192,6 +170,8 @@ export const players: Player[] = [
         year: 2024,
         matchRecord: "1-1",
         battleRecord: "2-3",
+        playoffMatchRecord: "0-0",
+        playoffBattleRecord: "0-0",
       },
     ]
   },
@@ -218,12 +198,16 @@ export const players: Player[] = [
         year: 2023,
         matchRecord: "0-2",
         battleRecord: "2-4",
+        playoffMatchRecord: "0-0",
+        playoffBattleRecord: "0-0",
       },
       {
         name: "Season 1",
         year: 2022,
         matchRecord: "2-0",
         battleRecord: "4-1",
+        playoffMatchRecord: "1-0",
+        playoffBattleRecord: "2-0",
       },
     ]
   },
@@ -237,6 +221,8 @@ export const players: Player[] = [
         year: 2023,
         matchRecord: "0-2",
         battleRecord: "0-1",
+        playoffMatchRecord: "1-0",
+        playoffBattleRecord: "2-1",
       },
     ]
   },
@@ -250,6 +236,8 @@ export const players: Player[] = [
         year: 2024,
         matchRecord: "4-1",
         battleRecord: "8-4",
+        playoffMatchRecord: "0-0",
+        playoffBattleRecord: "0-0",
       },
     ]
   },
@@ -263,64 +251,8 @@ export const players: Player[] = [
         year: 2022,
         matchRecord: "1-1",
         battleRecord: "3-3",
-      },
-    ]
-  },
-  {
-    name: "GunnZalez",
-    slug: "gunnzalez",
-    // avatarUrl: "/players/gunnzalez.png",
-    seasons: [
-      {
-        name: "Season 2",
-        year: 2023,
-        matchRecord: "0-2",
-        battleRecord: "2-4",
-      },
-      {
-        name: "Season 1",
-        year: 2022,
-        matchRecord: "2-0",
-        battleRecord: "4-1",
-      },
-    ]
-  },
-  {
-    name: "IronManVGC",
-    slug: "ironmanvgc",
-    // avatarUrl: "/players/ironmanvgc.png",
-    seasons: [
-      {
-        name: "Season 2",
-        year: 2023,
-        matchRecord: "0-2",
-        battleRecord: "0-1",
-      },
-    ]
-  },
-  {
-    name: "jiho",
-    slug: "jiho",
-    // avatarUrl: "/players/jiho.png",
-    seasons: [
-      {
-        name: "Season 3",
-        year: 2024,
-        matchRecord: "4-1",
-        battleRecord: "8-4",
-      },
-    ]
-  },
-  {
-    name: "KantoClark",
-    slug: "kantoclark",
-    // avatarUrl: "/players/kantoclark.png",
-    seasons: [
-      {
-        name: "Season 1",
-        year: 2022,
-        matchRecord: "1-1",
-        battleRecord: "3-3",
+        playoffMatchRecord: "0-0",
+        playoffBattleRecord: "0-0",
       },
     ]
   },
@@ -353,6 +285,8 @@ export const players: Player[] = [
         year: 2024,
         matchRecord: "1-1",
         battleRecord: "3-3",
+        playoffMatchRecord: "0-0",
+        playoffBattleRecord: "0-0",
       },
     ]
   },
@@ -366,6 +300,8 @@ export const players: Player[] = [
         year: 2022,
         matchRecord: "1-2",
         battleRecord: "2-5",
+        playoffMatchRecord: "0-0",
+        playoffBattleRecord: "0-0",
       },
     ]
   },
@@ -392,6 +328,8 @@ export const players: Player[] = [
         year: 2022,
         matchRecord: "3-1",
         battleRecord: "6-3",
+        playoffMatchRecord: "1-1",
+        playoffBattleRecord: "2-3",
       },
     ]
   },
@@ -405,12 +343,16 @@ export const players: Player[] = [
         year: 2024,
         matchRecord: "2-1",
         battleRecord: "4-4",
+        playoffMatchRecord: "0-1",
+        playoffBattleRecord: "0-2",
       },
       {
         name: "Season 2",
         year: 2023,
         matchRecord: "2-1",
         battleRecord: "4-2",
+        playoffMatchRecord: "1-1",
+        playoffBattleRecord: "2-2",
       },
     ]
   },
@@ -424,6 +366,8 @@ export const players: Player[] = [
         year: 2024,
         matchRecord: "0-0",
         battleRecord: "0-0",
+        playoffMatchRecord: "0-0",
+        playoffBattleRecord: "0-0",
         isManager: true,
       },
       {
@@ -431,6 +375,8 @@ export const players: Player[] = [
         year: 2023,
         matchRecord: "2-0",
         battleRecord: "4-1",
+        playoffMatchRecord: "0-0",
+        playoffBattleRecord: "0-0",
         isManager: true,
       },
       {
@@ -438,6 +384,8 @@ export const players: Player[] = [
         year: 2022,
         matchRecord: "0-0",
         battleRecord: "0-0",
+        playoffMatchRecord: "1-0",
+        playoffBattleRecord: "2-1",
         isManager: true,
       },
     ]
@@ -465,6 +413,8 @@ export const players: Player[] = [
         year: 2023,
         matchRecord: "2-0",
         battleRecord: "4-2",
+        playoffMatchRecord: "0-0",
+        playoffBattleRecord: "0-0",
       },
     ]
   },
@@ -478,6 +428,8 @@ export const players: Player[] = [
         year: 2024,
         matchRecord: "0-2",
         battleRecord: "0-4",
+        playoffMatchRecord: "0-0",
+        playoffBattleRecord: "0-0",
       },
     ]
   },
@@ -491,6 +443,8 @@ export const players: Player[] = [
         year: 2024,
         matchRecord: "4-1",
         battleRecord: "9-2",
+        playoffMatchRecord: "0-1",
+        playoffBattleRecord: "1-2",
       },
     ]
   },
@@ -504,6 +458,8 @@ export const players: Player[] = [
         year: 2024,
         matchRecord: "2-1",
         battleRecord: "4-4",
+        playoffMatchRecord: "1-0",
+        playoffBattleRecord: "2-0",
       },
     ]
   },
@@ -517,16 +473,17 @@ export const players: Player[] = [
         year: 2024,
         matchRecord: "5-0",
         battleRecord: "10-2",
+        playoffMatchRecord: "0-1",
+        playoffBattleRecord: "0-2",
       },
-<<<<<<< HEAD
-=======
       {
         name: "Season 2",
         year: 2023,
         matchRecord: "0-3",
         battleRecord: "1-6",
+        playoffMatchRecord: "0-1",
+        playoffBattleRecord: "0-2",
       }
->>>>>>> main
     ]
   },
   {
@@ -566,6 +523,8 @@ export const players: Player[] = [
         year: 2023,
         matchRecord: "3-0",
         battleRecord: "6-1",
+        playoffMatchRecord: "1-0",
+        playoffBattleRecord: "2-0",
       },
     ]
   },
@@ -598,12 +557,16 @@ export const players: Player[] = [
         year: 2024,
         matchRecord: "2-2",
         battleRecord: "5-4",
+        playoffMatchRecord: "0-0",
+        playoffBattleRecord: "0-0",
       },     
       {
         name: "Season 2",
         year: 2023,
         matchRecord: "4-0",
         battleRecord: "8-0",
+        playoffMatchRecord: "2-1",
+        playoffBattleRecord: "4-3",
       },
     ]
   },
@@ -623,6 +586,8 @@ export const players: Player[] = [
         year: 2024,
         matchRecord: "1-3",
         battleRecord: "4-7",
+        playoffMatchRecord: "0-0",
+        playoffBattleRecord: "0-0",
       },
     ]
   },
@@ -649,6 +614,8 @@ export const players: Player[] = [
         year: 2024,
         matchRecord: "0-0",
         battleRecord: "0-0",
+        playoffMatchRecord: "0-0",
+        playoffBattleRecord: "0-0",
         isManager: true,
       },
       {
@@ -656,6 +623,8 @@ export const players: Player[] = [
         year: 2023,
         matchRecord: "0-2",
         battleRecord: "2-4",
+        playoffMatchRecord: "1-0",
+        playoffBattleRecord: "2-1",
         isManager: true,
       },
       {
@@ -663,6 +632,8 @@ export const players: Player[] = [
         year: 2022,
         matchRecord: "2-2",
         battleRecord: "4-4",
+        playoffMatchRecord: "0-0",
+        playoffBattleRecord: "0-0",
       },
     ]
   },
@@ -676,12 +647,16 @@ export const players: Player[] = [
         year: 2023,
         matchRecord: "1-2",
         battleRecord: "3-4",
+        playoffMatchRecord: "1-1",
+        playoffBattleRecord: "2-3",
       },
       {
         name: "Season 1",
         year: 2022,
         matchRecord: "2-2",
         battleRecord: "5-5",
+        playoffMatchRecord: "1-1",
+        playoffBattleRecord: "2-3",
       },
     ]
   }
