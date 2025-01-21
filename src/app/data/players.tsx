@@ -89,8 +89,8 @@ export const players: Player[] = [
         year: 2022,
         matchRecord: "1-1",
         battleRecord: "2-3",
-        playoffMatchRecord: "1-0",
-        playoffBattleRecord: "2-0",
+        playoffMatchRecord: "0-0",
+        playoffBattleRecord: "0-0",
       },
     ]
   },
