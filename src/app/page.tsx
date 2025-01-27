@@ -62,7 +62,7 @@ export default function Home() {
               <div>
                 <h3 className="text-lg font-semibold mb-3 text-gray-800">Standing</h3>
                 <div className="grid gap-2">
-                  <p>Regular Season: 1-0-1</p>
+                  <p>Regular Season: 2-0-1</p>
                 </div>
               </div>
             </div>
