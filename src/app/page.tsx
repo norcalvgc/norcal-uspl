@@ -103,39 +103,45 @@ export default function Home() {
             <div className="divide-y divide-gray-200">
               <MatchRow 
                 norcalPlayer="MissingNoL"
-                norcalScore={0}
+                norcalScore={2}
                 opponentPlayer="kamikazekidgc"
                 opponentScore={0}
+                isWin={true}
               />
               <MatchRow 
                 norcalPlayer="Bobjoecarl"
-                norcalScore={0}
+                norcalScore={2}
                 opponentPlayer="itachivgc"
                 opponentScore={0}
+                isWin={true}
               />
               <MatchRow 
                 norcalPlayer="eragon"
-                norcalScore={0}
+                norcalScore={2}
                 opponentPlayer="misspeller"
-                opponentScore={0}
+                opponentScore={1}
+                isWin={true}
               />
               <MatchRow 
                 norcalPlayer="turboisonline"
-                norcalScore={0}
+                norcalScore={2}
                 opponentPlayer="izzywooperstan"
                 opponentScore={0}
+                isWin={true}
               />
               <MatchRow 
                 norcalPlayer="kotoripoke"
-                norcalScore={0}
+                norcalScore={2}
                 opponentPlayer="aydenbarber_"
                 opponentScore={0}
+                isWin={true}
               />
               <MatchRow 
                 norcalPlayer="ToastNoButter"
-                norcalScore={0}
+                norcalScore={2}
                 opponentPlayer="trunksshe"
                 opponentScore={0}
+                isWin={true}
               />
             </div>
           </div>
