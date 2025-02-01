@@ -140,8 +140,8 @@ export const players: Player[] = [
       {
         name: "Season 4",
         year: 2025,
-        matchRecord: "2-0",
-        battleRecord: "4-1",
+        matchRecord: "3-0",
+        battleRecord: "6-2",
       },
     ]
   },
@@ -264,8 +264,8 @@ export const players: Player[] = [
       {
         name: "Season 4",
         year: 2025,
-        matchRecord: "2-0",
-        battleRecord: "4-0",
+        matchRecord: "3-0",
+        battleRecord: "6-1",
       },
     ]
   },
@@ -536,8 +536,8 @@ export const players: Player[] = [
       {
         name: "Season 4",
         year: 2025,
-        matchRecord: "1-0",
-        battleRecord: "2-0",
+        matchRecord: "2-0",
+        battleRecord: "4-0",
       },
     ]
   },
@@ -578,8 +578,8 @@ export const players: Player[] = [
       {
         name: "Season 4",
         year: 2025,
-        matchRecord: "2-0",
-        battleRecord: "4-1",
+        matchRecord: "3-0",
+        battleRecord: "6-1",
       },
       {
         name: "Season 3",
