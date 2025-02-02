@@ -97,10 +97,10 @@ export default function Home() {
         </section>
 
         <section className="w-full">
-          <h2 className="text-xl md:text-3xl font-bold text-center bg-gray-900 text-white py-3 rounded-t-lg">Week 3 vs. Michigan</h2>
+          <h2 className="text-xl md:text-3xl font-bold text-center bg-gray-900 text-white py-3 rounded-t-lg">Week 4 vs. Hawaii</h2>
           <div className="bg-white shadow-md rounded-b-lg p-6 hover:shadow-lg transition-shadow">
-            <p className="text-green-600 font-semibold mb-2">Win (6-0)</p>
-            <p className="text-gray-600 text-sm mb-4">Dates: 1/20/25 - 1/26/25</p>
+            <p className="text-green-600 font-semibold mb-2">Win (4-0)</p>
+            <p className="text-gray-600 text-sm mb-4">Dates: 1/27/25 - 2/2/25</p>
             <div className="divide-y divide-gray-200">
               <MatchRow 
                 norcalPlayer="THATSaplusONE"
