@@ -62,7 +62,7 @@ export default function Home() {
               <div>
                 <h3 className="text-lg font-semibold mb-3 text-gray-800">Standing</h3>
                 <div className="grid gap-2">
-                  <p>Regular Season: 2-0-1</p>
+                  <p>Regular Season: 3-0-1</p>
                 </div>
               </div>
             </div>
@@ -99,7 +99,7 @@ export default function Home() {
         <section className="w-full">
           <h2 className="text-xl md:text-3xl font-bold text-center bg-gray-900 text-white py-3 rounded-t-lg">Week 4 vs. Hawaii</h2>
           <div className="bg-white shadow-md rounded-b-lg p-6 hover:shadow-lg transition-shadow">
-            <p className="text-green-600 font-semibold mb-2">Win (4-0)</p>
+            <p className="text-green-600 font-semibold mb-2">Win (5-1)</p>
             <p className="text-gray-600 text-sm mb-4">Dates: 1/27/25 - 2/2/25</p>
             <div className="divide-y divide-gray-200">
               <MatchRow 
@@ -113,15 +113,15 @@ export default function Home() {
                 norcalPlayer="gp2332"
                 norcalScore={0}
                 opponentPlayer="bigboywally"
-                opponentScore={0}
-                // isWin={true}
+                opponentScore={2}
+                isLoss={true}
               />
               <MatchRow 
                 norcalPlayer="VivixVGC"
-                norcalScore={0}
+                norcalScore={2}
                 opponentPlayer="seta_souji"
                 opponentScore={0}
-                // isWin={true}
+                isWin={true}
               />
               <MatchRow 
                 norcalPlayer="turboisonline"
