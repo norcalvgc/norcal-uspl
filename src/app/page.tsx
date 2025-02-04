@@ -97,6 +97,58 @@ export default function Home() {
         </section>
 
         <section className="w-full">
+          <h2 className="text-xl md:text-3xl font-bold text-center bg-gray-900 text-white py-3 rounded-t-lg">Week 5 vs. Colorado</h2>
+          <div className="bg-white shadow-md rounded-b-lg p-6 hover:shadow-lg transition-shadow">
+            {/* <p className="text-green-600 font-semibold mb-2">Win (5-1)</p> */}
+            <p className="text-gray-600 text-sm mb-4">Dates: 2/3/25 - 2/9/25</p>
+            <div className="divide-y divide-gray-200">
+              <MatchRow 
+                norcalPlayer="ToastNoButter"
+                norcalScore={0}
+                opponentPlayer="miyagissbm"
+                opponentScore={0}
+                // isWin={true}
+              />
+              <MatchRow 
+                norcalPlayer="Bobjoecarl"
+                norcalScore={0}
+                opponentPlayer="egrim"
+                opponentScore={0}
+                // isLoss={true}
+              />
+              <MatchRow 
+                norcalPlayer="Refyrn"
+                norcalScore={0}
+                opponentPlayer="fuzzthatwuzz"
+                opponentScore={0}
+                // isWin={true}
+              />
+              <MatchRow 
+                norcalPlayer="VivixVGC"
+                norcalScore={0}
+                opponentPlayer="livnlarge27"
+                opponentScore={0}
+                // isWin={true}
+              />
+              <MatchRow 
+                norcalPlayer="gp2332"
+                norcalScore={0}
+                opponentPlayer="swordmastercody"
+                opponentScore={0}
+                // isWin={true}
+              />
+              <MatchRow 
+                norcalPlayer="soduh"
+                norcalScore={0}
+                opponentPlayer="tryingtobetitan"
+                opponentScore={0}
+                // isWin={true}
+              />
+            </div>
+          </div>
+        </section>
+
+        <section className="w-full">
           <h2 className="text-xl md:text-3xl font-bold text-center bg-gray-900 text-white py-3 rounded-t-lg">Week 4 vs. Hawaii</h2>
           <div className="bg-white shadow-md rounded-b-lg p-6 hover:shadow-lg transition-shadow">
             <p className="text-green-600 font-semibold mb-2">Win (5-1)</p>
