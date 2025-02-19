@@ -62,7 +62,7 @@ export default function Home() {
               <div>
                 <h3 className="text-lg font-semibold mb-3 text-gray-800">Standing</h3>
                 <div className="grid gap-2">
-                  <p>Regular Season: 3-0-1</p>
+                  <p>Regular Season: 3-1-2</p>
                 </div>
               </div>
             </div>
@@ -97,52 +97,156 @@ export default function Home() {
         </section>
 
         <section className="w-full">
-          <h2 className="text-xl md:text-3xl font-bold text-center bg-gray-900 text-white py-3 rounded-t-lg">Week 5 vs. Colorado</h2>
+          <h2 className="text-xl md:text-3xl font-bold text-center bg-gray-900 text-white py-3 rounded-t-lg">Week 7 vs. Georgia</h2>
           <div className="bg-white shadow-md rounded-b-lg p-6 hover:shadow-lg transition-shadow">
-            {/* <p className="text-green-600 font-semibold mb-2">Win (5-1)</p> */}
-            <p className="text-gray-600 text-sm mb-4">Dates: 2/3/25 - 2/9/25</p>
+            {/* <p className="text-gray-600 font-semibold mb-2">Loss (2-4)</p> */}
+            <p className="text-gray-600 text-sm mb-4">Dates: 2/17/25 - 2/23/25</p>
             <div className="divide-y divide-gray-200">
               <MatchRow 
-                norcalPlayer="ToastNoButter"
+                norcalPlayer="gp2332"
                 norcalScore={0}
-                opponentPlayer="miyagissbm"
+                opponentPlayer="dimsunlight"
                 opponentScore={0}
                 // isWin={true}
               />
               <MatchRow 
-                norcalPlayer="Bobjoecarl"
+                norcalPlayer="eragon"
                 norcalScore={0}
-                opponentPlayer="egrim"
+                opponentPlayer="hopeless5089"
                 opponentScore={0}
                 // isLoss={true}
               />
               <MatchRow 
-                norcalPlayer="Refyrn"
+                norcalPlayer="THATSAplusONE"
                 norcalScore={0}
-                opponentPlayer="fuzzthatwuzz"
+                opponentPlayer="wonderfullymade"
                 opponentScore={0}
-                // isWin={true}
+                // isLoss={true}
+              />
+              <MatchRow 
+                norcalPlayer="lichess"
+                norcalScore={0}
+                opponentPlayer="rowanhall"
+                opponentScore={0}
+                // isLoss={true}
               />
               <MatchRow 
                 norcalPlayer="VivixVGC"
                 norcalScore={0}
-                opponentPlayer="livnlarge27"
-                opponentScore={0}
-                // isWin={true}
-              />
-              <MatchRow 
-                norcalPlayer="gp2332"
-                norcalScore={0}
-                opponentPlayer="swordmastercody"
+                opponentPlayer="xzaclee"
                 opponentScore={0}
                 // isWin={true}
               />
               <MatchRow 
                 norcalPlayer="soduh"
                 norcalScore={0}
-                opponentPlayer="tryingtobetitan"
+                opponentPlayer="bacon122"
                 opponentScore={0}
-                // isWin={true}
+                // isLoss={true}
+              />
+            </div>
+          </div>
+        </section>
+
+        <section className="w-full">
+          <h2 className="text-xl md:text-3xl font-bold text-center bg-gray-900 text-white py-3 rounded-t-lg">Week 6 vs. Florida</h2>
+          <div className="bg-white shadow-md rounded-b-lg p-6 hover:shadow-lg transition-shadow">
+            <p className="text-gray-600 font-semibold mb-2">Loss (2-4)</p>
+            <p className="text-gray-600 text-sm mb-4">Dates: 2/10/25 - 2/16/25</p>
+            <div className="divide-y divide-gray-200">
+              <MatchRow 
+                norcalPlayer="ToastNoButter"
+                norcalScore={2}
+                opponentPlayer="pat_con5"
+                opponentScore={1}
+                isWin={true}
+              />
+              <MatchRow 
+                norcalPlayer="turboisonline"
+                norcalScore={0}
+                opponentPlayer="bsmiffy"
+                opponentScore={2}
+                isLoss={true}
+              />
+              <MatchRow 
+                norcalPlayer="lichess"
+                norcalScore={1}
+                opponentPlayer="_p0ke_"
+                opponentScore={2}
+                isLoss={true}
+              />
+              <MatchRow 
+                norcalPlayer="MissingNoL"
+                norcalScore={0}
+                opponentPlayer="blaze7989"
+                opponentScore={2}
+                isLoss={true}
+              />
+              <MatchRow 
+                norcalPlayer="kotoripoke"
+                norcalScore={2}
+                opponentPlayer="mimikyufool"
+                opponentScore={1}
+                isWin={true}
+              />
+              <MatchRow 
+                norcalPlayer="eragon"
+                norcalScore={0}
+                opponentPlayer="easyaustin"
+                opponentScore={2}
+                isLoss={true}
+              />
+            </div>
+          </div>
+        </section>
+
+        <section className="w-full">
+          <h2 className="text-xl md:text-3xl font-bold text-center bg-gray-900 text-white py-3 rounded-t-lg">Week 5 vs. Colorado</h2>
+          <div className="bg-white shadow-md rounded-b-lg p-6 hover:shadow-lg transition-shadow">
+            <p className="text-gray-600 font-semibold mb-2">Tie (3-3)</p>
+            <p className="text-gray-600 text-sm mb-4">Dates: 2/3/25 - 2/9/25</p>
+            <div className="divide-y divide-gray-200">
+              <MatchRow 
+                norcalPlayer="ToastNoButter"
+                norcalScore={2}
+                opponentPlayer="miyagissbm"
+                opponentScore={0}
+                isWin={true}
+              />
+              <MatchRow 
+                norcalPlayer="Bobjoecarl"
+                norcalScore={2}
+                opponentPlayer="egrim"
+                opponentScore={1}
+                isWin={true}
+              />
+              <MatchRow 
+                norcalPlayer="Refyrn"
+                norcalScore={0}
+                opponentPlayer="fuzzthatwuzz"
+                opponentScore={2}
+                isLoss={true}
+              />
+              <MatchRow 
+                norcalPlayer="VivixVGC"
+                norcalScore={0}
+                opponentPlayer="livnlarge27"
+                opponentScore={2}
+                isLoss={true}
+              />
+              <MatchRow 
+                norcalPlayer="gp2332"
+                norcalScore={2}
+                opponentPlayer="swordmastercody"
+                opponentScore={1}
+                isWin={true}
+              />
+              <MatchRow 
+                norcalPlayer="soduh"
+                norcalScore={0}
+                opponentPlayer="tryingtobetitan"
+                opponentScore={2}
+                isLoss={true}
               />
             </div>
           </div>
