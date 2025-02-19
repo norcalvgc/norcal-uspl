@@ -151,7 +151,7 @@ export default function Home() {
         <section className="w-full">
           <h2 className="text-xl md:text-3xl font-bold text-center bg-gray-900 text-white py-3 rounded-t-lg">Week 6 vs. Florida</h2>
           <div className="bg-white shadow-md rounded-b-lg p-6 hover:shadow-lg transition-shadow">
-            <p className="text-gray-600 font-semibold mb-2">Loss (2-4)</p>
+            <p className="text-red-600 font-semibold mb-2">Loss (2-4)</p>
             <p className="text-gray-600 text-sm mb-4">Dates: 2/10/25 - 2/16/25</p>
             <div className="divide-y divide-gray-200">
               <MatchRow 
