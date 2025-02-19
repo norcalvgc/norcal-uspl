@@ -318,21 +318,21 @@ export const players: Player[] = [
       },
     ]
   },
-  {
-    name: "Neil_VGC",
-    slug: "neilvgc",
-    // avatarUrl: "/players/neilvgc.png",
-    seasons: [
-      {
-        name: "Season 1",
-        year: 2022,
-        matchRecord: "3-1",
-        battleRecord: "6-3",
-        playoffMatchRecord: "1-1",
-        playoffBattleRecord: "2-3",
-      },
-    ]
-  },
+  // {
+  //   name: "Neil_VGC",
+  //   slug: "neilvgc",
+  //   // avatarUrl: "/players/neilvgc.png",
+  //   seasons: [
+  //     {
+  //       name: "Season 1",
+  //       year: 2022,
+  //       matchRecord: "3-1",
+  //       battleRecord: "6-3",
+  //       playoffMatchRecord: "1-1",
+  //       playoffBattleRecord: "2-3",
+  //     },
+  //   ]
+  // },
   {
     name: "Nyle",
     slug: "nyle",
